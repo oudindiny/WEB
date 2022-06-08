@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>한국영화</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'YUniverse-B';
+        }
+        @font-face {
+            font-family: 'YUniverse-B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            background: linear-gradient(90deg, #5f2c82 , #49a09d); 
+        }
+        .title{
+            margin:50px;
+        }
+        hr{
+            color:#000000;
+        }
+        h1{
+            color:#ffffff;
+        }
+        .imgs {
+            display:flex;
+            margin: 10px;
+        }
+        .img_movie{
+            width: 20%;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .img_title{
+            display:flex;
+        }
+        .t1{
+            position: relative;
+            left:30px;
+            top: 35px;
+            font-size:40px;
+            color:white;
+        }
+        .t2{
+            position: relative;
+            left:250px;
+            top: 35px;
+            font-size:40px;
+            color:white;
+        }
+        .t3{
+            position: relative;
+            left:370px;
+            top: 35px;
+            font-size:40px;
+            color:white;
+        }
+        .t4{
+            position: relative;
+            left:550px;
+            top: 35px;
+            font-size:40px;
+            color:white;
+        }
+        .t5{
+            position: relative;
+            left:500px;
+            top: 35px;
+            font-size:40px;
+            color:white;
+        }
+        .img_movie:hover{
+            transform: rotateY(360deg);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>밀리터리 영화</h1><hr>
+    </div>
+    <div class="img_title">
+        <h3 class="t1">강철비</h3>
+        <h3 class="t2">봉오동전투</h3>
+        <h3 class="t3">고지전</h3>
+        <h3 class="t4">안시성</h3>
+    </div>
+    <div class="imgs">
+        <img src="image/korea/movie_image1.jpg" class="img_movie">
+        <img src="image/korea/movie_image2.jpg" class="img_movie">
+        <img src="image/korea/movie_image3.jpg" class="img_movie">
+        <img src="image/korea/movie_image4.jpg" class="img_movie">
+    </div>
+    <div class="title">
+        <h1>한국 코미디 영화</h1><hr>
+    </div>
+    <div class="img_title">
+        <h3 class="t1">더킹</h3>
+        <h3 class="t2">미쓰와이프</h3>
+        <h3 class="t3">장르만로맨스</h3>
+        <h3 class="t5">내안에 그놈</h3>
+    </div>
+    <div class="imgs">
+        <img src="image/korea/movie_image5.jpg" class="img_movie">
+        <img src="image/korea/movie_image6.jpg" class="img_movie">
+        <img src="image/korea/movie_image7.jpg" class="img_movie">
+        <img src="image/korea/movie_image8.jpg" class="img_movie">
+    </div>
+</body>
+</html>

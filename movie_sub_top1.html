@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Document</title>
+    <title>캐시트럭</title>
     <style>
         *{
             margin: 0;
@@ -18,8 +18,17 @@
         body{
             background: linear-gradient(90deg, #5f2c82 , #49a09d); 
         }
-        img{
-            width: 100%;
+        .main{
+            width:600px;
+            margin:20px;
+            box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+        }
+        .back{
+            padding-top:40px;
+            margin-left:20px;
+            width:50px;
+
         }
         .star{
             width: 20px;
@@ -56,7 +65,7 @@
             position:relative;
             width: 300px;
             height: 300px;
-            background: conic-gradient(#8890ff 0% 6%,#fcad34 6% 15%, #c7abf8 15% 35%,#fe7e59 35% 77%, #86c8fc 77% 100%);
+            background: conic-gradient(#8890ff 0% 7%,#fcad34 7% 27%, #c7abf8 27% 44%,#fe7e59 44% 74%, #86c8fc 74% 100%);
             border-radius: 50%;
             margin: 60px;
         }
@@ -97,10 +106,9 @@
         }
         .before_coms{
             display: flex;
-            flex-wrap: wrap;
-            margin-left:50px;
+            
+            margin-left:20px;
             margin-bottom: 50px;
-
         }
         textarea{
             width: 1000px;
@@ -147,20 +155,6 @@
         iframe{
             margin-left: 40px;
         }
-        #inputImg{
-            color: #fff;
-        }
-        .before_img{
-            width: 400px;
-            background-color:#eee;
-            margin:30px;
-        }
-        h5{
-            color: #fff;
-        }
-        hr{
-            color: #fff;
-        }
     </style>
     
 </head>
@@ -168,15 +162,50 @@
     
     <div class="content">
         <div class="con1">
-            <img src="image/event/main.jpg" >
-            <img src="image/event/event.jpg" usemap="#canvas">
-            <map name="canvas">
-                <area shape="rect" coords="700,700,1200,850" href="canvas.html">
-            </map>
+            <a href="movie_top.html"><img src="image/back.png" class="back"></a>
+            <img src="image/top/movie_image1.jpg" class="main">
             
+            
+        <div class="con3">
+            <div class="chart">
+            </div>
+            <div class="chart_text">
+                <span class="color_1">■</span> OST 7%<br>
+                <span class="color_2">■</span> 영상미 20%<br>
+                <span class="color_3">■</span> 스토리 17%<br>
+                <span class="color_4">■</span> 연기 30%<br>
+                <span class="color_5">■</span> 연출 25%<br>
+            </div>
         </div>
-
+        </div>
+        <div class="con2">
+            <h2>캐시트럭</h2>
+            <h3 class="yellow">평점 <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SYiEc5GO0-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
+            
+            <div class="text">
+                캐시트럭을 노리는 무장 강도에 의해 아들을 잃은 H(제이슨 스타뎀).<br>
+                분노에 휩싸인 그는 아들을 죽인 범인의 단서를 찾기 위해<br>
+                현금 호송 회사에 위장 취업한다.<br><br>
+                
+                첫 임무부터 백발백중 사격 실력을 자랑하며,<br>
+                단숨에 에이스로 급부상한 H.<br>
+                캐시트럭을 노리는 자들을 하나 둘 처리하며,<br>
+                아들을 죽인 범인들과 점점 가까워지는데…<br><br>
+                
+                자비는 없다, 분노에 가득 찬 응징만이 남았다.<br><br>
+                
+                그의 분노가 폭발한다!<br>
+            </div>
+        
+            
+        </div> 
     </div>
     <div class="com">
         <div class="input_co">
@@ -190,40 +219,41 @@
             </select>
             <div class="user_text">
                 <h4>user54</h4>
-                <textarea class="tx_area" placeholder="이미지의 설명을 적어주세요 :)"></textarea><br>
-                <input type="file" id="inputImg">
+                <textarea class="tx_area" placeholder="영화를 추천하고 싶은 사람과 인상깊었던 내용을 작성해주세요 :)"></textarea>
             </div>
             <div class="btn_co">
-                <button type="button" class="btnCo">이벤트 참여하기</button>
+                <button type="button" class="btnCo">댓글달기</button>
             </div>
         </div>
         <div class="before_coms">
             <div class = "before_com">
-                <h4 class="before_username">🐱 user 26</h4>
+            <h4 class="before_username">🐱 user 26</h4>
             </div>
-        
-        
             <div class = "before_com">
-                <img src="image/event/PaintJS[EXPORT] (1).png" class="before_img">
-                <div class="img_text">
-                    <h5><br>범죄도시1을 너무재밌게 봤습니다! 이번에 시즌 2도 보고싶습니다!<br><br>
-                        마동석 형님! 기대되네요!<br>
-                    </h5>
+                <div class="before_textarea">
+                    <h4 class="before_txt">보는내내흥미진진하고 결과적으로 속이후련하네요주인공짱멋짐!</h4>
                 </div>
-            </div><hr>
+            </div>
+        </div>
+        <div class="before_coms">
             <div class = "before_com">
-                <h4 class="before_username">🐰 user 10</h4>
+            <h4 class="before_username">🐰 user 10</h4>
             </div>
             <div class = "before_com">
-                <img src="image/event/PaintJS[EXPORT] (2).png" class="before_img">
-            </div><hr>
-        
+                <div class="before_textarea">
+                    <h4 class="before_txt">간만에 제대로 된 영화를 본 느낌!!</h4>
+                </div>
+            </div>
+        </div>
+        <div class="before_coms">
             <div class = "before_com">
-                <h4 class="before_username">🐷 user 29</h4>
+            <h4 class="before_username">🐷 user 29</h4>
             </div>
             <div class = "before_com">
-                <img src="image/event/PaintJS[EXPORT] (3).png" class="before_img">
-            </div><hr>
+                <div class="before_textarea">
+                    <h4 class="before_txt">가이 리치가 가이 리치하고 제이슨 스타뎀이 제이슨 스타뎀했다 ㄷㄷ <br>마지막까지 엄청 긴장하면서 봤더니 정말 시간 순삭 ㄷㄷ</h4>
+                </div>
+            </div>
         </div>
     </div> 
         
