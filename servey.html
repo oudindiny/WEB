@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'YUniverse-B';
+        }
+        @font-face {
+            font-family: 'YUniverse-B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ebecf0;
+            overflow: hidden;
+            
+        }
+        .container {
+            border-radius: 10px;
+            box-shadow: -5px -5px 10px #fff, 5px 5px 10px #babebc;
+            position: absolute;
+            width: 768px;
+            min-height: 578px;
+            overflow: hidden;
+            
+        }
+        h1{
+            color:#49a09d;
+        }
+        .purple{
+            color:#5f2c82;
+        }
+        form {
+            background: #ebecf0;
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .in {
+            background: #eee;
+            padding: 16px;
+            margin: 20px 0;
+            width: 85%;
+            border: 0;
+            outline: none;
+            border-radius: 20px;
+            box-shadow: inset 7px 2px 10px #babebc, inset -5px -5px 12px #fff;
+        }
+        .checkbox{
+            display: flex;
+            
+            align-items: center;
+        }
+        .ch_box{
+            background: #eee;
+        }
+        .label{
+            color: rgb(113, 113, 113);
+        }
+        button {
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 15px 45px;
+            margin: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 80ms ease-in;
+        }
+        .form_btn {
+            box-shadow: -5px -5px 10px #fff, 5px 5px 8px #babebc;
+            background: linear-gradient(90deg, #5f2c82 , #49a09d); 
+            color: #fff;
+        }
+        .form_btn:active {
+            box-shadow: inset 1px 1px 2px #babebc, inset -1px -1px 2px #fff;
+        }
+        .sign-in-container {
+            position: absolute;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            transition: all 0.5s;
+        }
+        .in:hover{
+            border: 5px solid #49a09d;
+            color: #5f2c82;
+        }
+        .form_btn:hover{
+            border: 5px solid #49a09d;
+            background: #fff;
+            color:#49a09d;
+        }
+        select{
+            width: 100px;
+        }
+    </style>
+    <script>
+        function test() {
+            alert("영화 신청을 해주셔서 감사합니다:) 더 열심히 하는 뭅무비가 되겠습니다!")
+    }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+                <form>
+                    <h1>영화추천</h1>
+                        
+                    <span class="purple">회원들과 함께 공유하고 싶은 영화를 신청해주세요:)</span>
+                    <input type="text" placeholder="추천하는 영화 제목" class="in">
+                    <div class="label">추천하는 영화의 장르를 모두 골라주세요</div><br>
+                    <div class="checkbox">
+                        
+                        <input type="checkbox" value="판타지" class="ch_box"> 판타지
+                        <input type="checkbox" value="SF" class="ch_box"> SF
+                        <input type="checkbox" value="범죄" class="ch_box"> 범죄
+                        <input type="checkbox" value="인디" class="ch_box">인디
+                        <input type="checkbox" value="액션" class="ch_box">액션
+                        <input type="checkbox" value="애니메이션" class="ch_box">애니메이션
+                        <input type="checkbox" value="코미디" class="ch_box"> 코미디
+                        <input type="checkbox" value="로맨스" class="ch_box"> 로맨스
+                        <input type="checkbox" value="호러" class="ch_box">호러
+                        <input type="checkbox" value="음악뮤지컬" class="ch_box">음악 / 뮤지컬
+                        
+                    </div>
+                    
+                    
+                    <input type="text" placeholder="추천하는 이유를 간단하게 적어주세요" class="in">
+                    <input type="tel" placeholder="휴대폰 번호를 입력해주세요"class="in">
+                    <input type="text" placeholder="이메일을 입력해주세요" class="in">
+                    <h5>추천한 영화가 업로드 되면 연락을 드립니다. 어디로 연락 드릴까요?</h5>
+                    <select>
+                        <option value="tel">휴대폰</option>
+                        <option value="email">이메일</option>
+                    </select>
+
+                    <input type= button class="in form_btn" onclick="test()" value="신청하기" ></input>
+                </form>
+            </div>        
+    </div>
+</body>
+</html>

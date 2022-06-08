@@ -1,0 +1,141 @@
+
+.header {
+    text-align: center;
+    animation-delay: 5s;
+}
+.header_img{
+    width: 100%;
+}
+
+/*nav*/
+.nav1 {
+    display: flex;
+    align-items: center;
+    background-color: darkgray;
+    padding: 8px 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.drop_div{
+    margin:auto;
+    text-align:center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.dropdown{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.dropdown-menu{
+    border-radius: 5px 5px 5px 5px;
+    color:black;
+    padding: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    margin:20px;
+}
+.dropdown-menu:hover{
+    background-color:#3495fe;
+    color:white;
+    
+}
+
+.dropdown-menu a{
+    color:black;
+    text-decoration: none;
+
+}
+.dropdown-content{
+    position: absolute;
+    background-color: rgb(216, 232, 237);
+    min-width: 160px;
+    display: none;
+    
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size:12px;
+}
+
+.dropdown-content ul{
+    display: none;
+}
+.dropdown-content ul li{
+    display: block;
+}
+
+
+.dropdown-content:hover{
+    background-color:#3495fe;
+    color: white;
+}
+.navbar__toggle{
+    display: none;
+}
+
+/*nav2*/
+
+.container{
+    margin-top:10px;
+    display:flex;
+    flex-direction: row;
+}
+.nav2{
+    width:200px;
+    
+}
+.con{
+    margin-left: 50px;
+    width: 200px;
+}
+.side_menu a{
+    width: 150px;
+}
+.side_menu{
+    list-style: none;
+}
+.side_menu_box{
+    width: 150px;
+    height: 150px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    text-align: center;
+    margin: bottom 30px;
+    margin-top:30px;
+
+}
+.side_menu_box img{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.iframe{
+    width:1200px;
+    height: 750px;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: 'YUniverse-B';
+        }
+        @font-face {
+            font-family: 'YUniverse-B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+        margin: 0;
+        background: linear-gradient(90deg, #5f2c82 , #49a09d); 
+        }
+        h3{
+            font-size:24px;
+            margin: -2px;
+        }
+        h4{
+            font-size:20px;
+            margin: -2px;
+        }
+        .con{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            margin-top:5%;
+            flex-direction: row;
+            align-content: stretch;
+
+            
+        }
+        .content {
+            width:400px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            background: rgba(255,255,255, 0.3);
+            margin: 20px;
+           
+        }
+        .content img{
+            width: 200px;
+            margin: 20 auto;
+        }
+        img {
+            margin: 10px;
+        }
+        button {
+            margin: 20px;
+        }
+        .custom-btn {
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+            7px 7px 20px 0px rgba(0,0,0,.1),
+            4px 4px 5px 0px rgba(0,0,0,.1);
+            outline: none;
+            margin: auto;
+        }
+        .btn-6 {
+            background: #49a09d;
+            background: radial-gradient(circle, #49a09d 0%, rgba(118,174,241,1) 100%);
+            line-height: 42px;
+            padding: 0;
+            border: none;
+        }
+        .btn-6 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .btn-6:before,
+        .btn-6:after {
+            position: absolute;
+            content: "";
+            height: 0%;
+            width: 1px;
+            box-shadow:
+            -1px -1px 20px 0px rgba(255,255,255,1),
+            -4px -4px 5px 0px rgba(255,255,255,1),
+            7px 7px 20px 0px rgba(0,0,0,.4),
+            4px 4px 5px 0px rgba(0,0,0,.3);
+        }
+        .btn-6:before {
+            right: 0;
+            top: 0;
+            transition: all 500ms ease;
+        }
+        .btn-6:after {
+            left: 0;
+            bottom: 0;
+            transition: all 500ms ease;
+        }
+        .btn-6:hover{
+            background: transparent;
+            color: #76aef1;
+            box-shadow: none;
+        }
+        .btn-6:hover:before {
+            transition: all 500ms ease;
+            height: 100%;
+        }
+        .btn-6:hover:after {
+            transition: all 500ms ease;
+            height: 100%;
+        }
+        .btn-6 span:before,
+        .btn-6 span:after {
+            position: absolute;
+            content: "";
+            box-shadow:
+            -1px -1px 20px 0px rgba(255,255,255,1),
+            -4px -4px 5px 0px rgba(255,255,255,1),
+            7px 7px 20px 0px rgba(0,0,0,.4),
+            4px 4px 5px 0px rgba(0,0,0,.3);
+        }
+        .btn-6 span:before {
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: .5px;
+            transition: all 500ms ease;
+        }
+        .btn-6 span:after {
+            right: 0;
+            bottom: 0;
+            width: 0%;
+            height: .5px;
+            transition: all 500ms ease;
+        }
+        .btn-6 span:hover:before {
+            width: 100%;
+        }
+        .btn-6 span:hover:after {
+            width: 100%;
+        }
+        .yellow{
+            color: rgb(255, 196, 0);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="content">
+            <img src="image/music/movie_image1.jpg">
+            <h3>글리 시즌3</h3>
+            <h4>별점 <span class="yellow">★★★★★ 9.25</span></h4>
+            <button class="custom-btn btn-6" onclick="location.href='movie_sub.html'";><span>보러가기</span></button>
+        </div>
+        <div class="content">
+            <img src="image/music/movie_image2.jpg">
+            <h3>해어화</h3>
+            <h4>별점 <span class="yellow">★★★★☆ 8.10</span></h4>
+            <button class="custom-btn btn-6" onclick="location.href='movie_sub.html'";><span>보러가기</span></button>
+        </div>
+        <div class="content">
+            <img src="image/music/movie_image3.jpg">
+            <h3>레미제라블</h3>
+            <h4>별점 <span class="yellow">★★★★★ 8.39</span></h4>
+            <button class="custom-btn btn-6" onclick="location.href='movie_sub.html'";><span>보러가기</span></button>
+        </div>
+        <div class="content">
+            <img src="image/music/movie_image4.jpg">
+            <h3>맘마미아</h3>
+            <h4>별점 <span class="yellow">★★★★★ 8.98</span></h4>
+            <button class="custom-btn btn-6" onclick="location.href='movie_sub.html'";><span>보러가기</span></button>
+        </div>
+        <div class="content">
+            <img src="image/music/movie_image5.jpg">
+            <h3>라라랜드</h3>
+            <h4>별점 <span class="yellow">★★★★★ 8.62</span></h4>
+            <button class="custom-btn btn-6" onclick="location.href='movie_sub.html'";><span>보러가기</span></button>
+        </div>
+        <div class="content">
+            <img src="image/music/movie_image6.jpg">
+            <h3>알라딘</h3>
+            <h4>별점 <span class="yellow">★★★★★ 9.38</span></h4>
+            <button class="custom-btn btn-6" onclick="location.href='movie_sub.html'";><span>보러가기</span></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'YUniverse-B';
+        }
+        @font-face {
+            font-family: 'YUniverse-B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            background: linear-gradient(90deg, #5f2c82 , #49a09d); 
+        }
+        .main{
+            width:600px;
+            margin:20px;
+            box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+        }
+        .back{
+            padding-top:40px;
+            margin-left:20px;
+            width:50px;
+
+        }
+        .star{
+            width: 20px;
+            margin:0;  
+            
+        }
+        .yellow{
+            color: rgb(255, 204, 0);
+        }
+        .content{
+            display:flex;
+            
+        }
+        h2{
+            
+            font-size: 40;
+            margin:40px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+
+        }
+        h3{
+            margin:40px;
+        }
+        .text{
+            margin:40px;
+            padding:40px;
+            border: 2px solid rgba(255,255,255,0.3); 
+            border-radius: 5px;
+            box-shadow: 0 0 5px 4px rgba(129, 127, 127, 0.3);
+            background: rgba(255,255,255,0.2);
+        }
+        .chart {/*차트 수정*/
+            display:inline-block;
+            position:relative;
+            width: 300px;
+            height: 300px;
+            background: conic-gradient(#8890ff 0% 7%,#fcad34 7% 27%, #c7abf8 27% 44%,#fe7e59 44% 74%, #86c8fc 74% 100%);
+            border-radius: 50%;
+            margin: 60px;
+        }
+        .con1{
+            display:flex;
+            flex-direction:column;
+        }
+        .con3{
+            display:flex;
+            justify-content:center; 
+            align-items:center;
+            margin: 40px;
+            padding:20px;
+            border: 2px solid rgba(255,255,255,0.3); 
+            border-radius: 5px;
+            box-shadow: 0 0 5px 4px rgba(129, 127, 127, 0.3);
+            background: rgba(255,255,255,0.2);
+        }
+        .color_1{
+            color:#8890ff
+        }
+        .color_2{
+            color:#fcad34
+        }
+        .color_3{
+            color:#c7abf8
+        }
+        .color_4{
+            color:#fe7e59
+        }
+        .color_5{
+            color:#86c8fc
+        }
+        .input_co{
+            display: flex;
+            margin-left:20px;
+            margin-bottom: 50px;
+        }
+        .before_coms{
+            display: flex;
+            
+            margin-left:20px;
+            margin-bottom: 50px;
+        }
+        textarea{
+            width: 1000px;
+            height:100px;
+            resize:none;
+            font-size: 16px;
+            
+        }
+        h4{
+            color: #ffffff
+        }
+        .emoticon {
+            height:40px;
+            font-size: 20px;
+            border-radius:25px;
+
+        }
+        .btnCo{
+            margin-top:20px;
+            margin-left: 10px;
+            width:100px;
+            height:100px;
+            border-radius:25px;
+            border:none;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            cursor: pointer;
+
+        }
+        .before_username{
+            background-color: #fff;
+            color: #000;
+            padding:10px;
+            border-radius:25px;
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+        .before_com{
+            margin: 10px;
+        }
+        .before_textarea{
+            margin-top: 10px;;
+        }
+        iframe{
+            margin-left: 40px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="content">
+        <div class="con1">
+            <a href="movie_indie.html"><img src="image/back.png" class="back"></a>
+            <img src="image/indie/movie_image1.jpg" class="main">
+            
+            
+        <div class="con3">
+            <div class="chart">
+            </div>
+            <div class="chart_text">
+                <span class="color_1">■</span> OST 7%<br>
+                <span class="color_2">■</span> 영상미 20%<br>
+                <span class="color_3">■</span> 스토리 17%<br>
+                <span class="color_4">■</span> 연기 30%<br>
+                <span class="color_5">■</span> 연출 25%<br>
+            </div>
+        </div>
+        </div>
+        <div class="con2">
+            <h2>아무도 없는 곳</h2>
+            <h3 class="yellow">평점 <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VPZizQ_-fQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        
+            
+            <div class="text">
+                어느 이른 봄, 7년 만에 서울로 돌아온 소설가 ‘창석’이 우연히 만나고 헤어진 여기, 길 잃은 마음의 이야기<br><br>
+            </div>
+        
+            
+        </div> 
+    </div>
+    <div class="com">
+        <div class="input_co">
+            <select class="emoticon">
+                <option value="em1" >🐵</option>
+                <option value="em2" >🐷</option>
+                <option value="em3" >🐱</option>
+                <option value="em4" >🐰</option>
+                <option value="em5" >🐹</option>
+                <option value="em6" >🐻</option>
+            </select>
+            <div class="user_text">
+                <h4>user54</h4>
+                <textarea class="tx_area" placeholder="영화를 추천하고 싶은 사람과 인상깊었던 내용을 작성해주세요 :)"></textarea>
+            </div>
+            <div class="btn_co">
+                <button type="button" class="btnCo">댓글달기</button>
+            </div>
+        </div>
+        <div class="before_coms">
+            <div class = "before_com">
+            <h4 class="before_username">🐱 user 26</h4>
+            </div>
+            <div class = "before_com">
+                <div class="before_textarea">
+                    <h4 class="before_txt">예전같음 문학을 했을 이들이 영화계에 너무 많이 가 있다.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="before_coms">
+            <div class = "before_com">
+            <h4 class="before_username">🐰 user 10</h4>
+            </div>
+            <div class = "before_com">
+                <div class="before_textarea">
+                    <h4 class="before_txt">죽음, 이별, 잃어버린 기억 등 공허하고 그늘진 마음에 대한 다섯가지 이야기. 슬픔의 심연에 빠져들게 한다</h4>
+                </div>
+            </div>
+        </div>
+        <div class="before_coms">
+            <div class = "before_com">
+            <h4 class="before_username">🐷 user 29</h4>
+            </div>
+            <div class = "before_com">
+                <div class="before_textarea">
+                    <h4 class="before_txt">가끔은 잔잔한 영화가 필요한 이유가 여기에 있다.</h4>
+                </div>
+            </div>
+        </div>
+    </div> 
+        
+</body>
+</html>

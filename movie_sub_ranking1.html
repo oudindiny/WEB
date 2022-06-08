@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'YUniverse-B';
+        }
+        @font-face {
+            font-family: 'YUniverse-B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            background: linear-gradient(90deg, #5f2c82 , #49a09d); 
+        }
+        .main{
+            width:600px;
+            margin:20px;
+            box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+        }
+        .back{
+            padding-top:40px;
+            margin-left:20px;
+            width:50px;
+
+        }
+        .star{
+            width: 20px;
+            margin:0;  
+            
+        }
+        .yellow{
+            color: rgb(255, 204, 0);
+        }
+        .content{
+            display:flex;
+            
+        }
+        h2{
+            
+            font-size: 40;
+            margin:40px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+
+        }
+        h3{
+            margin:40px;
+        }
+        .text{
+            margin:40px;
+            padding:40px;
+            border: 2px solid rgba(255,255,255,0.3); 
+            border-radius: 5px;
+            box-shadow: 0 0 5px 4px rgba(129, 127, 127, 0.3);
+            background: rgba(255,255,255,0.2);
+        }
+        .chart {/*차트 수정*/
+            display:inline-block;
+            position:relative;
+            width: 300px;
+            height: 300px;
+            background: conic-gradient(#8890ff 0% 6%,#fcad34 6% 15%, #c7abf8 15% 35%,#fe7e59 35% 77%, #86c8fc 77% 100%);
+            border-radius: 50%;
+            margin: 60px;
+        }
+        .con1{
+            display:flex;
+            flex-direction:column;
+        }
+        .con3{
+            display:flex;
+            justify-content:center; 
+            align-items:center;
+            margin: 40px;
+            padding:20px;
+            border: 2px solid rgba(255,255,255,0.3); 
+            border-radius: 5px;
+            box-shadow: 0 0 5px 4px rgba(129, 127, 127, 0.3);
+            background: rgba(255,255,255,0.2);
+        }
+        .color_1{
+            color:#8890ff
+        }
+        .color_2{
+            color:#fcad34
+        }
+        .color_3{
+            color:#c7abf8
+        }
+        .color_4{
+            color:#fe7e59
+        }
+        .color_5{
+            color:#86c8fc
+        }
+        .input_co{
+            display: flex;
+            margin-left:20px;
+            margin-bottom: 50px;
+        }
+        .before_coms{
+            display: flex;
+            
+            margin-left:20px;
+            margin-bottom: 50px;
+        }
+        textarea{
+            width: 1000px;
+            height:100px;
+            resize:none;
+            font-size: 16px;
+            
+        }
+        h4{
+            color: #ffffff
+        }
+        .emoticon {
+            height:40px;
+            font-size: 20px;
+            border-radius:25px;
+
+        }
+        .btnCo{
+            margin-top:20px;
+            margin-left: 10px;
+            width:100px;
+            height:100px;
+            border-radius:25px;
+            border:none;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            cursor: pointer;
+
+        }
+        .before_username{
+            background-color: #fff;
+            color: #000;
+            padding:10px;
+            border-radius:25px;
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+        .before_com{
+            margin: 10px;
+        }
+        .before_textarea{
+            margin-top: 10px;;
+        }
+        iframe{
+            margin-left: 40px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="content">
+        <div class="con1">
+            <a href="movie_crime.html"><img src="image/back.png" class="back"></a>
+            <img src="image/crime/movie_image2.jpg" class="main">
+            
+            
+        <div class="con3">
+            <div class="chart">
+            </div>
+            <div class="chart_text">
+                <span class="color_1">■</span> OST 6%<br>
+                <span class="color_2">■</span> 영상미 9%<br>
+                <span class="color_3">■</span> 스토리 20%<br>
+                <span class="color_4">■</span> 연기 42%<br>
+                <span class="color_5">■</span> 연출 23%<br>
+            </div>
+        </div>
+        </div>
+        <div class="con2">
+            <h2>성난황소</h2>
+            <h3 class="yellow">평점 <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+                    <img src="image/star.png" class="star">
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/u3CwwMJtgdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+        
+            
+            <div class="text">
+                11월, 스트레스를 날릴 "성난황소"!<br>
+                아시아의 드웨인 존슨, 마동석의 핵주먹 액션이 온다!<br><br>
+                
+                11월, 스트레스를 날려버릴 영화 "성난황소"는 한번 성나면 무섭게 돌변하는 ‘동철’(마동석)이 납치된 아내 '지수'(송지효)를 구하기 위해 무한 돌진하는 통쾌한 액션 영화다. 영화는 ‘성난황소’ 마동석을 필두로 송지효, 김성오, 김민재, 박지환 등 충무로 연기파 배우들이 의기투합해 액션을 펼쳤다. 특히 마동석이 열연한 ‘동철’이란 캐릭터는 그만이 소화할 수 있는 맨주먹 액션이 집약되어 있어 "성난황소"를 기대케 하는 강력한 요인 중 하나다.<br>
+                
+                마동석은 "부산행", "범죄도시", "신과 함께-인과 연" 등 그만의 시그니처 액션으로 많은 관객들의사랑을 받았다. 특히 할리우드 유명 제작자 ‘블룸하우스’의 제이슨 블룸 대표는 “최근 "부산행"을 봤다. 마동석은 아시아의 드웨인 존슨이다. 꼭 그와 작업하고 싶다”라며 극찬과 러브콜을 보내 화제를 모은 바 있다.<br> 이처럼 제이슨 블룸마저 사로잡은 "부산행"의 좀비보다 강한 남편 마동석이 "성난황소"에서 한층 업그레이드 된 액션을 펼칠 것으로 주목받고 있다.<br> 아내 ‘지수’를 구출하기 위한 작전을 거듭할수록 장소도, 액션도 점점 더 커지는 "성난황소" 속 액션씬들은 관객들의 짜릿함과 통쾌함을 배가시키기에 충분하다. 마동석은 “부산행""범죄도시""신과 함께-인과 연" 등으로 합을 자주 맞췄던 허명행 무술감독이 "성난황소"의 무술감독을 맡았다. 그는 여러 작품을 통해 저의 장단점을 많이 알아 나에게 특화된 핵주먹 액션 장면들을 만들어냈다”며 "성난황소"만이 선사할 수 있는 마동석만의 시그니처 액션으로 관객들을 흥분시킬 준비를 마쳤다.<br>
+                
+                이처럼 아시아의 드웨인 존슨, 마동석의 핵주먹 액션의 클라이맥스를 선사할 "성난황소"는 11월 관객들의 스트레스를 해소시켜줄 것이다.<br><br><br>
+           </div>
+        
+            
+        </div> 
+    </div>
+    <div class="com">
+        <div class="input_co">
+            <select class="emoticon">
+                <option value="em1" >🐵</option>
+                <option value="em2" >🐷</option>
+                <option value="em3" >🐱</option>
+                <option value="em4" >🐰</option>
+                <option value="em5" >🐹</option>
+                <option value="em6" >🐻</option>
+            </select>
+            <div class="user_text">
+                <h4>user54</h4>
+                <textarea class="tx_area" placeholder="영화를 추천하고 싶은 사람과 인상깊었던 내용을 작성해주세요 :)"></textarea>
+            </div>
+            <div class="btn_co">
+                <button type="button" class="btnCo">댓글달기</button>
+            </div>
+        </div>
+        <div class="before_coms">
+            <div class = "before_com">
+            <h4 class="before_username">🐱 user 26</h4>
+            </div>
+            <div class = "before_com">
+                <div class="before_textarea">
+                    <h4 class="before_txt">김성오는 진짜 연기잘한다.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="before_coms">
+            <div class = "before_com">
+            <h4 class="before_username">🐰 user 10</h4>
+            </div>
+            <div class = "before_com">
+                <div class="before_textarea">
+                    <h4 class="before_txt">ㅋㅋㅋ누가 저 주먹보고 마동석 아내 건드림?ㅋㅋㅋ맞는거 보는데 4DX 보는 줄 ㅠㅠ 액션 죽어여...bb</h4>
+                </div>
+            </div>
+        </div>
+        <div class="before_coms">
+            <div class = "before_com">
+            <h4 class="before_username">🐷 user 29</h4>
+            </div>
+            <div class = "before_com">
+                <div class="before_textarea">
+                    <h4 class="before_txt">코믹적인 걸 넣어서 그런지 테이큰 같이 묵직한 느낌이 없었음. 그래도 최근 마동석 영화 중 제일 재밌었음</h4>
+                </div>
+            </div>
+        </div>
+    </div> 
+        
+</body>
+</html>
