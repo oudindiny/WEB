@@ -1,11 +1,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVENT</title>
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'YUniverse-B';
+        }
+        @font-face {
+            font-family: 'YUniverse-B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            background: linear-gradient(90deg, #5f2c82 , #49a09d); 
+        }
+        img{
+            width: 100%;
+        }
+        .star{
+            width: 20px;
+            margin:0;  
+            
+        }
+        .yellow{
+            color: rgb(255, 204, 0);
+        }
+        .content{
+            display:flex;
+            
+        }
+        h2{
+            
+            font-size: 40;
+            margin:40px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+
+        }
+        h3{
+            margin:40px;
+        }
+        .text{
+            margin:40px;
+            padding:40px;
+            border: 2px solid rgba(255,255,255,0.3); 
+            border-radius: 5px;
+            box-shadow: 0 0 5px 4px rgba(129, 127, 127, 0.3);
+            background: rgba(255,255,255,0.2);
+        }
+        .chart {/*차트 수정*/
+            display:inline-block;
+            position:relative;
+            width: 300px;
+            height: 300px;
+            background: conic-gradient(#8890ff 0% 6%,#fcad34 6% 15%, #c7abf8 15% 35%,#fe7e59 35% 77%, #86c8fc 77% 100%);
+            border-radius: 50%;
+            margin: 60px;
+        }
+        .con1{
+            display:flex;
+            flex-direction:column;
+        }
+        .con3{
+            display:flex;
+            justify-content:center; 
+            align-items:center;
+            margin: 40px;
+            padding:20px;
+            border: 2px solid rgba(255,255,255,0.3); 
+            border-radius: 5px;
+            box-shadow: 0 0 5px 4px rgba(129, 127, 127, 0.3);
+            background: rgba(255,255,255,0.2);
+        }
+        .color_1{
+            color:#8890ff
+        }
+        .color_2{
+            color:#fcad34
+        }
+        .color_3{
+            color:#c7abf8
+        }
+        .color_4{
+            color:#fe7e59
+        }
+        .color_5{
+            color:#86c8fc
+        }
+        .input_co{
+            display: flex;
+            margin-left:20px;
+            margin-bottom: 50px;
+        }
+        .before_coms{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left:50px;
+            margin-bottom: 50px;
+
+        }
+        textarea{
+            width: 1000px;
+            height:100px;
+            resize:none;
+            font-size: 16px;
+            
+        }
+        h4{
+            color: #ffffff
+        }
+        .emoticon {
+            height:40px;
+            font-size: 20px;
+            border-radius:25px;
+
+        }
+        .btnCo{
+            margin-top:20px;
+            margin-left: 10px;
+            width:100px;
+            height:100px;
+            border-radius:25px;
+            border:none;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            cursor: pointer;
+
+        }
+        .before_username{
+            background-color: #fff;
+            color: #000;
+            padding:10px;
+            border-radius:25px;
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+        .before_com{
+            margin: 10px;
+        }
+        .before_textarea{
+            margin-top: 10px;;
+        }
+        iframe{
+            margin-left: 40px;
+        }
+        #inputImg{
+            color: #fff;
+        }
+        .before_img{
+            width: 400px;
+            background-color:#eee;
+        }
+        h5{
+            color: #fff;
+        }
+        hr{
+            color: #fff;
+        }
+    </style>
+    
 </head>
 <body>
+    
+    <div class="content">
+        <div class="con1">
+            <img src="image/event/main.jpg" >
+            <img src="image/event/event.jpg" usemap="#canvas">
+            <map name="canvas">
+                <area shape="rect" coords="700,700,1200,850" href="canvas.html">
+            </map>
+            
+        </div>
+
+        
+    </div>
     <div class="com">
         <div class="input_co">
             <select class="emoticon">
@@ -18,36 +189,41 @@
             </select>
             <div class="user_text">
                 <h4>user54</h4>
-                <input id="file-input" type="file" style="display: none;"/>
+                <textarea class="tx_area" placeholder="이미지의 설명을 적어주세요 :)"></textarea><br>
+                <input type="file" id="inputImg">
             </div>
             <div class="btn_co">
-                <button type="button" class="btnCo">댓글달기</button>
+                <button type="button" class="btnCo">이벤트 참여하기</button>
             </div>
         </div>
         <div class="before_coms">
             <div class = "before_com">
-            <h4 class="before_username">🐱 user 26</h4>
+                <h4 class="before_username">🐱 user 26</h4>
             </div>
             <div class = "before_com">
-                
-            </div>
-        </div>
-        <div class="before_coms">
+                <img src="image/event/PaintJS[EXPORT] (1).png" class="before_img">
+                <div class="img_text">
+                    <h5><br>범죄도시1을 너무재밌게 봤습니다! 이번에 시즌 2도 보고싶습니다!<br><br>
+                        마동석 형님! 기대되네요!<br>
+                    </h5>
+                </div>
+            </div><hr>
+        
             <div class = "before_com">
-            <h4 class="before_username">🐰 user 10</h4>
-            </div>
-            <div class = "before_com">
-                
-            </div>
-        </div>
-        <div class="before_coms">
-            <div class = "before_com">
-            <h4 class="before_username">🐷 user 29</h4>
+                <h4 class="before_username">🐰 user 10</h4>
             </div>
             <div class = "before_com">
-                
+                <img src="image/event/PaintJS[EXPORT] (2).png" class="before_img">
+            </div><hr>
+        
+            <div class = "before_com">
+                <h4 class="before_username">🐷 user 29</h4>
             </div>
+            <div class = "before_com">
+                <img src="image/event/PaintJS[EXPORT] (3).png" class="before_img">
+            </div><hr>
         </div>
     </div> 
+        
 </body>
 </html>
