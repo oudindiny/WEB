@@ -98,7 +98,7 @@
             color: #5f2c82;
         }
         .form_btn:hover{
-            border: 5px solid #49a09d;
+            border: 3px solid #49a09d;
             background: #fff;
             color:#49a09d;
         }
@@ -123,9 +123,14 @@
                     <span class="purple">아이디와 패스워드를 입력해주세요 :)</span>
                     <input type="text" placeholder="ID">
                     <input type="password" placeholder="Password">
-                    <button class="form_btn">- login -</button>
+                    <button class="form_btn" onclick="okButton()">- login -</button>
                 </form>
             </div>        
     </div>
+    <script>
+        function okButton() {
+            alert("로그인이 완료되었습니다! 환영합니다!")
+        }
+    </script>
 </body>
 </html>
